@@ -45,5 +45,9 @@ tools/
 
 ## 当前状态
 
-骨架阶段：移动、视角、轻/重击、受击、敌人追击、关卡清空判定、灰盒生成、构建与截图脚本。
-尚未接入：URP、动画、模型、骑战、叙事 UI。
+当前阶段：东岭关灰盒已由 Unity 批处理生成；运行时脚本已编译，截图工具已验证。
+尚未完成：编辑器内完整试玩、macOS 玩家包构建、URP、动画、角色模型、骑战、叙事 UI。
+
+## Agnir Project Instructions
+
+For Project activation, read [AGNIR.md](AGNIR.md). This section is a backward-compatible locator only.
