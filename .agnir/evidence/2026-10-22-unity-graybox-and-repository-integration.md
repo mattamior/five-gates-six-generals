@@ -3,7 +3,8 @@
 ## Repository observations
 - The user designated `https://github.com/mattamior/five-gates-six-generals` as the canonical online repository.
 - Its `main` ref was fetched at `e4a8f632d9f4945acdc8b0fbaa36e2ba3ce92003`, with earlier Agnir initialization commit `8da9eea` in its history.
-- Local project `main` began at `e3beb06` and had no merge base with remote `main`. The histories are being joined with an unrelated-histories merge; no force push or remote overwrite is used.
+- Local project `main` began at `e3beb06` and had no merge base with remote `main`. The histories were joined in merge commit `b0cebce` with an unrelated-histories merge; no force push or remote overwrite was used.
+- The integrated commit was pushed over the user's existing GitHub SSH identity and the published `refs/heads/main` was read back as `b0cebce18526508ebc65d2d3a36de4dc62a455e1`.
 - The remote Agnir identity, selected lineage, and VCS selector were read and agree with this repository and `refs/heads/main`.
 
 ## Environment and validation observations
