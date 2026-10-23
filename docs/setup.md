@@ -23,7 +23,7 @@ Unity 2022.3.62f3c1 Apple Silicon 包曾被 Hub 下载校验失败。后由 macO
 - `GrayboxBuilder.Build` 批处理成功，生成 `Assets/Scenes/Graybox_Dongling.unity` 并加入 Build Settings。
 - `ScreenshotCapture.CaptureFromCommandLine` 成功生成 6 张 1920×1080 截图，输出在 `Screenshots/`（该目录被 Git 忽略）。
 - 用户初次编辑器试玩确认移动、镜头、攻击、敌人行为和击败后通关提示正常。
-- HP 归零后的战败冻结、战败提示和 R 键重试已实现，并由打开的编辑器重新编译；该新流程尚待用户手动验收。
+- HP 归零后的战败冻结、战败提示和 R 键重试已实现、重新编译，并由用户在编辑器 Play 模式下手动验收成功。
 - 尚未验证：Unity 玩家包构建、完整交互验收、URP 渲染。
 
 授权诊断日志曾出现 Hub 常驻授权客户端 `Code 10` / IPC 协议版本不匹配提示；编辑器随后使用随编辑器提供的授权客户端继续运行，能创建工程并完成上述批处理。也出现 Unity 在线配置/遥测域名无法解析的网络日志。不要将这些日志误判为 C# 编译失败；在线服务是否全部可用未验证。

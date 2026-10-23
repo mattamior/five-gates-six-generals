@@ -11,5 +11,5 @@
 ## Verification boundary
 - The already-open Unity Editor recompiled after the script edits; its `Editor.log` contains no C# compiler error diagnostics and shows assembly reload.
 - No batchmode run was started because the user had the same project open in the GUI Editor.
-- HP-zero freeze, defeat UI, and R retry have not yet been manually exercised; they remain the next acceptance check.
+- The user later reported observing HP at 0 with the defeat screen, then confirmed that R works. Manual acceptance of defeat display and restart is complete.
 - Right-mouse input still does not reduce or negate incoming damage; blocking implementation is pending.
