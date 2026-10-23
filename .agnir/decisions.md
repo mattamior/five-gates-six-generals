@@ -22,3 +22,8 @@
 - Decision: Build a Three Kingdoms 3D action-story demo, with Dongling Pass as the first graybox slice for the Five Gates / Six Generals story.
 - Engine choice: Unity, as selected by the user. The locally available editor is Unity 2022.3.62f3c1 China Edition (Apple Silicon); Unity 6 remains a later upgrade option when a verified installer is available.
 - Evidence: User's project requests and verified installed editor/project artifacts.
+
+## D-005 — Graybox defeat response
+- Date: 2026-10-23
+- Decision: At player HP zero, freeze the graybox encounter, show a defeat prompt, and allow R to reload the current scene for retry.
+- Evidence: User reported the missing failure check as an odd behavior after the initial playtest; implementation is in `LevelDirector` and `GameBootstrap`, with manual verification pending.

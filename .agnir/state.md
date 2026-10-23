@@ -13,12 +13,14 @@
 - No product implementation, domain-specific requirements, or additional user-authored instructions were found in the repository at initialization.
 - ChatGPT Project-level persistent locator configuration was a separate execution-surface step and was not confirmed by repository initialization.
 
-## Current project truth (verified 2026-10-22)
+## Current project truth (verified 2026-10-23)
 - Product objective: build a 3D action-story demo based on the Three Kingdoms tale of Guan Yu passing five gates and defeating six generals; the first graybox slice is Dongling Pass.
 - The user selected Unity. The available editor is Unity 2022.3.62f3c1 China Edition, Apple Silicon, at `/Applications/Unity/Unity.app`; Rosetta 2 is installed because its bundled Unity Package Manager is x86_64.
 - The project now has runtime/editor scripts for player movement and combat, enemies, damage, narrative flow, setup, graybox construction, macOS build invocation, and screenshot capture.
 - Verified with batchmode: Setup/compilation completed with 0 C# compiler errors; `Assets/Data/Level_Dongling.asset` and `Assets/Scenes/Graybox_Dongling.unity` were generated; six 1920×1080 screenshots were captured.
-- The project is still a graybox. A complete interactive editor playtest, macOS player build, URP migration, final art, animation, mounted combat, and narrative UI have not been verified or completed.
+- The user manually tested the graybox in Play mode and confirmed defeating enemies triggers the clear banner; movement, camera, and the tested combat loop were reported normal. This was an initial playtest, not full acceptance.
+- The user identified that player HP reaching zero had no failure response. A defeat state was added: disable player movement/attacks, release the cursor, freeze time, show a defeat prompt, and reload the active scene with R. The open Editor recompiled after the change with no C# compiler errors in its log; HP-zero and R-restart behavior still require manual verification.
+- The project remains a graybox. A complete gameplay acceptance, macOS player build, URP migration, final art, animation, mounted combat, and narrative UI are not verified or complete. Blocking input is not yet wired to damage reduction.
 - Hub/editor logs included a Code 10 / IPC protocol warning and DNS failures for online endpoints. These did not block the verified local editor operations; full online-service availability remains unverified.
 - GitHub `main` contained the initial Agnir repository history. The local Unity project had an unrelated initial history; both were joined in merge commit `b0cebce` without force-pushing or replacing the remote history. GitHub `refs/heads/main` was verified to point at that commit after push.
 
